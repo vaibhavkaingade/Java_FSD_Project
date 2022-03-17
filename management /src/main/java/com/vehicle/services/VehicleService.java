@@ -1,10 +1,12 @@
 package com.vehicle.services;
 
+import java.util.List;
+
 import com.vehicle.entity.Vehicle;
 
 public interface VehicleService {
-
-	void savevehicle(Vehicle vehicle);
+	List<Vehicle> getAllVehicles();
+	void saveVehicle(Vehicle vehicle);
 	Vehicle getVehicleById(long id);
-	void deletevehicleById(long id);
+	void deleteVehicleById(long id);
 }
